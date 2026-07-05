@@ -187,7 +187,7 @@ hr {
     bottom: 0;
     position: absolute;
     background: var(--bg);
-    animation: typewriter 2.5s steps(30) forwards;
+    animation: typewriter 3s steps(30) forwards;
 }
 
 @keyframes typewriter {
@@ -196,12 +196,6 @@ hr {
     }
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .heroContent h1::before {
-        animation: none;
-        left: 100%;
-    }
-}
 
 .heroContent h2 {
     font-size: 1.25rem;
