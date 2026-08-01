@@ -34,11 +34,16 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--ink);
+    color: var(--magenta);
 }
 
 a:hover {
-    color: var(--magenta);
+    color: var(--magenta-dark);
+    text-decoration: underline;
+}
+
+#heroAnchor:hover {
+    text-decoration: none;
 }
 
 hr {
@@ -55,7 +60,7 @@ hr {
 
 .container {
     max-width: 1040px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding-inline: 24px;
     width: 100%;
     box-sizing: border-box;
@@ -105,6 +110,7 @@ hr {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     z-index: 1000;
+    margin-top: 0;
     max-width: none;
 }
 
@@ -234,10 +240,6 @@ hr {
 }
 
 /* ===About / Skills=== */
-main,
-section {
-    padding-block: 64px;
-}
 
 .aboutGrid {
     display: grid;
@@ -272,6 +274,7 @@ section {
 
 .skillsList {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     list-style: none;
@@ -347,6 +350,7 @@ section {
 /* ===Contact=== */
 .contactPanel {
     padding: 48px;
+    margin-bottom: 50px;
 }
 
 .contactText {
@@ -355,7 +359,6 @@ section {
 }
 
 .contactForm {
-    max-width: 600px;
     display: flex;
     flex-direction: column;
     gap: 16px;
